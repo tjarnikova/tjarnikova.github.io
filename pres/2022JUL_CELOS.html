@@ -9,7 +9,7 @@
     <style>            
         /* Overall styling for slide */
         .remark-slide-content {
-            font-size: 1.1em;
+            font-size: 0.9em;
             padding:0em 4em 0em 4em;
             font-family: 'Georgia';
             letter-spacing: 0.025em;
@@ -35,7 +35,7 @@
         
         /* Styling for level three header, ###Text */
         .remark-slide-content h3 {
-            font-size: 1.4em;
+            font-size: 1.2em;
             color: #0045f4;
             font-family: 'Gill Sans';
             font-weight: normal;
@@ -65,7 +65,7 @@
         }
         
         .author {
-            font-size: 1.0em;
+            font-size: 1.2em;
             color: #0045f4;
             font-style: italic;
             font-family: 'Gill Sans';
@@ -86,13 +86,13 @@
         }
         
         .date {
-            font-size: 0.8em;
+            font-size: 1.2em;
             font-family: 'Gill Sans';
             font-style: italic;
         }
         
         .note {
-            font-size: 0.55em;
+            font-size: 0.8em;
         }
         
         /* Other special classes */
@@ -123,70 +123,171 @@ class: center, middle
 .title[Understanding the Changing Role of Stratospheric Ozone in Modifying the Southern Ocean Wind Structure]     
  <!-- .subtitle[] -->
                
-.author[Tereza Jarníková, David Willis, Steven Rumbold, Colin Jones, Corinne Le Quéré]  
-<br/>    
-.institution[RoSES, ORCHESTRA and ENCORE Annual Science Meeting]
-<br/>    
-.institution[University of East Anglia]
+.author[Tereza Jarníková$^{1}$, David Willis$^{1}$, Steven Rumbold$^{2}$, Colin Jones$^{3}$, Corinne Le Quéré$^{1}$]  
+
+.author[RoSES, ORCHESTRA and ENCORE Annual Science Meeting]
 <br/>    
 .date[July 12, 2022]
 <br/>    
-<img style="width:80%"  src="./figs_2022_JUL_CELOS/roseslogo.png">
-<br/> 
-xx - appropriate to add logos: Tyndall, Met Hadley, UEA
----
-name: background        
-class: center 
-##Background (draft)
--xx - find appropriate illustratory figure - Thomson 2011? <br/> 
--ODS > vertical temperature structure > change in wind shear >
- change in windspeed / distribution, esp in summer
+<img style="width:80%"  src="./figs_2022_JUL_CELOS/logos.png">
+<br/> <br/> 
+.note[1- School of Environmental Sciences, University of East Anglia]<br/> 
+.note[2- National Centre For Atmospheric Science, University of Reading]<br/> 
+.note[3- National Centre For Atmospheric Science, University of Leeds]
 
 ---
 name: background        
 class: center 
-##Broader Research Objective (draft)
- -run 6 ozone and SSP scenarios to untangle role of ozone and greenhouse gas 
- emission in warming and windspeed increases and resultant changes in SO carbon cycling from 1940-2100
+<br/>
+##Overarching Research Objective
+.date[Using PLANKTOM, forced by atmospheric scenarios from UKESM1, <br/> we determine the effect of changing ozone and greenhouse gas concentrations <br/>  on Southern Ocean carbon cycling to the end of the 21st century.] 
 
 ---
 name: background        
 class: center 
-##Guiding Questions for Today's Presentation
-<br/> 
-<br/> 
-1. How do changes in Southern Ocean wind patterns in the Met Office ESM-derived
- wind product compare to those in ERA5 and NCEP?
-<br/> 
-<br/> 
-2. How are the Southern Ocean wind patterns and temperature distributions 
-projected to change over the coming century under different ozone and SSP scenarios?
+<br/>
+##Overarching Research Objective
+.date[Using PLANKTOM, forced by atmospheric scenarios from UKESM1, <br/> we determine the effect of changing ozone and greenhouse gas concentrations <br/>  on Southern Ocean carbon cycling to the end of the 21st century.] 
+
+##Intermediate Guiding Questions
+
+.date[1- How do changes in Southern Ocean wind patterns <br/> in the Met Office UKESM1-derived
+ wind product <br/> compare to those in ERA5 and NCEP?]
+.date[2- How are the Southern Ocean wind patterns <br/>
+projected to change over the coming century <br/> under different ozone and SSP scenarios?]
 
 ---
 name: model         
 class: center 
-##Part 1: about the Hadley ESM model
-xx-consult with Steve. highlight colleagues from Hadley centre, representative model image
+##Part 1: about the Hadley ESM model (optional slide)
+xx-consult with Steve and Colin. highlight colleagues from Hadley centre, representative model image
 
 ---
 name: model         
 class: center 
-##Comparing wind wpeeds between three atmospheric products
-<img style="width:100%"  src="./figs_2022_JUL_CELOS/sumclim.png">
+###Summer wind climatologies: NCEP, ERA, UKESM1
+<img style="width:97%"  src="./figs_2022_JUL_CELOS/summer_clim.png">
 
-all 3 wind products show comparable climatologies, but NCEP low compared to ERA5/MO <br/>
-strong measurable increases starting in 1990<br/>
-xx-increase font-size, reproject (potentially show 1950-1960 and then decadal increases after)
+The UKESM1 model shows similar spatial patterns and trends <br/> in the summer wind climatology as the ERA5 product.<br/><br/>
+Strong domain-wide increases in summer windspeed are visible, <br/> intensifying in the last 30 years. <br/><br/>
+The NCEP product somewhat underestimates the other two. <br/><br/>
+
+
+<!-- http://127.0.0.1:8888/lab/workspaces/auto-z/tree/prelim_EVAL_forcing/CELOS-windclim.ipynb -->
 
 ---
 name: model         
 class: center 
-##Comparing wind wpeeds between three atmospheric products
-<img style="width:100%"  src="./figs_2022_JUL_CELOS/winclim.png">
-winter windspeed increases more subtle <br/>
-xx-increase font-size
+###Winter wind climatologies: NCEP, ERA, UKESM1
+<img style="width:97%"  src="./figs_2022_JUL_CELOS/winter_clim.png">
+
+The UKESM1 model shows similar spatial patterns and trends <br/> in the summer wind climatology as the ERA5 product.<br/><br/>
+Winter wind speeds are universally stronger, <br/> but increases are more subtle and less spatially cohesive. <br/><br/>
+The NCEP product shows lower wind speeds, <br/> but stronger wind speed increases than the other two products. <br/><br/>
+---
+name: model         
+class: center 
+##Part 1: Quantitative Windspeed Timeseries Summary 
+
+<img style="width:53%"  src="./figs_2022_JUL_CELOS/windzonal.jpg">
+
+Windspeed increases are stronger in summer than winter <br/> and are comparable between UKESM1 and ERA5. <br/><br/>
+NCEP consistently significantly underestimates the other two products <br/> and show larger trends in both seasons. 
+
 
 ---
+name: background        
+class: center 
+##Part 2: Scenarios of Wind Speed Evolution over the 21st century
+<br/>     <br/>  
+We will run 6 ozone/climate scenarios from 1940-2100, <br/> forcing PLANKTOM with UKESM1-derived atmospheric conditions:
+<br/><br/> 
+<img style="width:70%"  src="./figs_2022_JUL_CELOS/sspdesc.png">
+<br/> 
+<br/> 
+Here I examine historic and projected changes in wind speed under these 6 scenarios. 
+
+---
+name: background        
+class: center 
+##PDF of the Historical Southern Ocean Wind Climatology: 1940-1960 
+<img style="width:44%"  src="./figs_2022_JUL_CELOS/wspd_1940-1960.jpg">
+
+As expected, from 1940-1960 wind magnitudes are 
+almost identical between 6 scenarios. <br/>
+Winter winds are stronger and somewhat less variable.  
+
+---
+name: background        
+class: center 
+##PDF of the Historical Southern Ocean Wind Climatology: 1940-1960 
+<img style="width:44%"  src="./figs_2022_JUL_CELOS/wspd_ghost_1940-1960.jpg">
+
+As expected, from 1940-1960 wind magnitudes are 
+almost identical between 6 scenarios. <br/>
+Winter winds are stronger and somewhat less variable.   
+
+
+---
+name: background        
+class: center 
+##Southern Ocean Wind Climatology: present-day (2010-2030)
+<img style="width:44%"  src="./figs_2022_JUL_CELOS/wspd_2010-2030.jpg">
+
+Under the real-world and low-O$_3$ scenarios, much larger summer increases in windspeed are visible than in the high-O$_3$ scenario. 
+Winter increases have been uniformly modest.  
+
+---
+name: background        
+class: center 
+##Southern Ocean Wind Climatology: 2040-2060
+<img style="width:44%"  src="./figs_2022_JUL_CELOS/wspd_2040-2060.jpg">
+<br/> 
+going forward, combination of high-ODS, high CO2 scen. has highest windspeed
+SSP starts mattering/ not much change in winter
+
+
+---
+name: background        
+class: center 
+##outhern Ocean Wind Climatology: 2080-2100
+<img style="width:44%"  src="./figs_2022_JUL_CELOS/wspd_2080-2100.jpg">
+<br/> 
+subtle: under ssp 1-2.6 with normal ozone evolution,
+wspd actually decreases to end
+
+---
+name: background        
+class: center 
+##Summary of Projected Southern Ocean Wind Speed Changes
+<img style="width:95%"  src="./figs_2022_JUL_CELOS/wspd_10yrmean.jpg">
+
+---
+name: background        
+class: center 
+##Ozone and Greenhouse Gas effects on Summer Southern Ocean Windspeed 
+<img style="width:95%"  src="./figs_2022_JUL_CELOS/fx_10yrmean.jpg">
+
+
+---
+name: background        
+class: center 
+##Future steps
+runs
+
+ 
+    </textarea>
+    <script src="./javascript/remark-latest.min.js" type="text/javascript"></script>
+    <script defer src="./javascript/katex.min.js"></script>
+    <script defer src="./javascript/auto-render.min.js"></script>
+    <!-- Call remark.js and KaTeX with liminal default settings -->
+    <script type="text/javascript" src="./javascript/call-javascript.js">
+</script>
+       
+</body>
+</html>
+
+<!-- ---
 name: model         
 class: center 
 ##Wind Velocity Directionality: Summer
@@ -208,107 +309,7 @@ class: center
 
 MO and ERA5 have comparable wind directionality - increased
 westerly wind dominance in winter as opposed to summer. 
-MO again has less westerly dominance
-
----
-name: model         
-class: center 
-##Part 1: Quantitative Windspeed Timeseries Summary 
-
-<img style="width:82%"  src="./figs_2022_JUL_CELOS/windzonal.jpg">
-
-Summer increases larger than winter ones, MO and ERA5 products quantitatively comparable, 
-even when broken down by sector, throughout timeseries, 
-NCEP consistently underestimates MO/ERA5 by significant amounts (up to 1 m/s)
-
-
----
-name: background        
-class: center 
-##Part 2: Running Model Scenarios
-Using MetOffice ESM output, 
-we will run 6 climate/ozone scenarios from 1940-2100:
-<br/>   
-<br/>    
-<img style="width:70%"  src="./figs_2022_JUL_CELOS/sspdesc.png">
-<br/> 
-
----
-name: background        
-class: center 
-##Historical PDF of a Southern Ocean Wind Climatology: 1940-1960 
-<img style="width:47%"  src="./figs_2022_JUL_CELOS/wspd_1940-1960.jpg">
-<br/> 
-As expected, from 1940-1960 wind magnitudes are 
-almost identical between 6 scenarios - 
-winter winds are stronger and somewhat less variable.  
-
----
-name: background        
-class: center 
-##Historical Southern Ocean Wind Climatology: 1940-1960 
-<img style="width:47%"  src="./figs_2022_JUL_CELOS/wspd_BW_BASELINE.jpg">
-<br/> 
-As expected, from 1940-1960 wind magnitudes are 
-almost identical between 6 scenarios - 
-winter winds are stronger and somewhat less variable.  
-
-
----
-name: background        
-class: center 
-##Present-day: 2010-2030
-<img style="width:47%"  src="./figs_2022_JUL_CELOS/wspd_2010-2030.jpg">
-<br/> 
-large increases in sum wind clim. (1A/1B is real world), almost none 
-in no-ozone scenario.
-
----
-name: background        
-class: center 
-##Looking to the mid-century: 2040-2060
-<img style="width:47%"  src="./figs_2022_JUL_CELOS/wspd_2040-2060.jpg">
-<br/> 
-going forward, combination of high-ODS, high CO2 scen. has highest windspeed
-SSP starts mattering/ not much change in winter
-
-
----
-name: background        
-class: center 
-##End of century scenarios: 2080-2100
-<img style="width:47%"  src="./figs_2022_JUL_CELOS/wspd_2080-2100.jpg">
-<br/> 
-subtle: under ssp 1-2.6 with normal ozone evolution,
-wspd actually decreases to end
-
----
-name: background        
-class: center 
-##Summary of Projected Southern Ocean Wind Speed Changes
-.left-column[ <img style="width:95%"  src="./figs_2022_JUL_CELOS/download-5.png">
-]
-
-.right-column[<img style="width:100%"  src="./figs_2022_JUL_CELOS/wspd_annot_2080-2100.jpg">]
-
----
-name: background        
-class: center 
-##Future steps
-runs
-
- 
-    </textarea>
-    <script src="./javascript/remark-latest.min.js" type="text/javascript"></script>
-    <script defer src="./javascript/katex.min.js"></script>
-    <script defer src="./javascript/auto-render.min.js"></script>
-    <!-- Call remark.js and KaTeX with liminal default settings -->
-    <script type="text/javascript" src="./javascript/call-javascript.js">
-</script>
-       
-</body>
-</html>
-
+MO again has less westerly dominance -->
 
 <!-- name: tools      
 class: center 
