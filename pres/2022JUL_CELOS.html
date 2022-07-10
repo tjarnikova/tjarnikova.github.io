@@ -157,7 +157,7 @@ class: center
 
 ##Intermediate Guiding Questions
 
-.date[1- How do changes in Southern Ocean wind patterns <br/> in the Met Office UKESM1-derived
+.date[1- How do changes in Southern Ocean wind patterns <br/> in the NERC/Met Office UKESM1-derived
  wind product <br/> compare to those in ERA5 and NCEP?]
 .date[2- How are the Southern Ocean wind patterns <br/>
 projected to change over the coming century <br/> under different ozone and SSP scenarios?]
@@ -165,18 +165,12 @@ projected to change over the coming century <br/> under different ozone and SSP 
 ---
 name: model         
 class: center 
-##Part 1: about the Hadley ESM model (optional slide)
-xx-consult with Steve and Colin. highlight colleagues from Hadley centre, representative model image
-
----
-name: model         
-class: center 
-###Summer wind climatologies: NCEP, ERA, UKESM1
+###Austral summer wind climatologies: NCEP, ERA5, UKESM1
 <img style="width:97%"  src="./figs_2022_JUL_CELOS/summer_clim.png">
 
 The UKESM1 model shows similar spatial patterns and trends <br/> in the summer wind climatology as the ERA5 product.<br/><br/>
-Strong domain-wide increases in summer windspeed are visible, <br/> intensifying in the last 30 years. <br/><br/>
-The NCEP product somewhat underestimates the other two. <br/><br/>
+Strong domain-wide increases in summer windspeed are visible, intensifying in the last 30 years. <br/><br/>
+The NCEP product shows slightly lower wind speeds (and stronger windspeed increases) than the other two. <br/><br/>
 
 
 <!-- http://127.0.0.1:8888/lab/workspaces/auto-z/tree/prelim_EVAL_forcing/CELOS-windclim.ipynb -->
@@ -184,12 +178,12 @@ The NCEP product somewhat underestimates the other two. <br/><br/>
 ---
 name: model         
 class: center 
-###Winter wind climatologies: NCEP, ERA, UKESM1
+###Austral winter wind climatologies: NCEP, ERA, UKESM1
 <img style="width:97%"  src="./figs_2022_JUL_CELOS/winter_clim.png">
 
-The UKESM1 model shows similar spatial patterns and trends <br/> in the summer wind climatology as the ERA5 product.<br/><br/>
 Winter wind speeds are universally stronger, <br/> but increases are more subtle and less spatially cohesive. <br/><br/>
-The NCEP product shows lower wind speeds, <br/> but stronger wind speed increases than the other two products. <br/><br/>
+The UKESM1 model shows similar spatial patterns and trends <br/> in the summer wind climatology as the ERA5 product.<br/><br/>
+The NCEP product again shows lower wind speeds <br/> but stronger wind speed increases than the other two products. <br/><br/>
 ---
 name: model         
 class: center 
@@ -198,7 +192,7 @@ class: center
 <img style="width:53%"  src="./figs_2022_JUL_CELOS/windzonal.jpg">
 
 Windspeed increases are stronger in summer than winter <br/> and are comparable between UKESM1 and ERA5. <br/><br/>
-NCEP consistently significantly underestimates the other two products <br/> and show larger trends in both seasons. 
+NCEP windspeeds are continuously significantly lower than windspeeds  <br/> in the other two products and show larger trends in both seasons. 
 
 
 ---
@@ -254,7 +248,7 @@ SSP scenario-dependent changes in windspeed increases start being visible in sum
 ---
 name: background        
 class: center 
-##outhern Ocean Wind Climatology: 2080-2100
+##Southern Ocean Wind Climatology: 2080-2100
 <img style="width:44%"  src="./figs_2022_JUL_CELOS/wspd_2080-2100.jpg">
 <br/> 
 Under the natural ozone scenario (O$_3$R), SSP is the deciding factor in late-century wind speed evolution: <br/> 
@@ -277,10 +271,21 @@ class: center
 <img style="width:95%"  src="./figs_2022_JUL_CELOS/fx_10yrmean.jpg">
 
 Both low-O$_3$(↓) and high-CO$_2$(↑) drive increases in summer wind speed.  <br/> <br/>
-Due to ozone recovery in the natural ozone (O$_3$R) scenario,  <br/> wind speeds in the natural (O$_3$R) and low-O$_3$(↓) scenarios converge by end-of-century.
+Due to ozone recovery in the natural ozone (O$_3$R) scenario,  <br/> wind speeds in the natural (O$_3$R) and high-O$_3$(↑) scenarios converge by end-of-century.
 
-
- 
+---
+name: background        
+class: center 
+##Summary and Future work
+<img style="width:75%"  src="./figs_2022_JUL_CELOS/wspd_10yrmean.jpg">
+<br/>
+1. Both SSP and ozone concentration play a role in determining future wind speeds: 
+high CO$_2$ and ozone depletion both act to increase wind speed. <br/> <br/>  
+2. Under a low-SSP scenario with ozone recovery, a reversal of the windspeed increases is possible by the end of the 21st century. <br/>  <br/> 
+3. We are now running our ocean model under these six scenarios,
+ and hope to discuss the effects of these changing wind climatologies on the carbon cycling soon.  <br/> <br/> 
+.note[T.Jarnikova@uea.ac.uk]<br/>
+.note[@tjarnikova on Twitter]
     </textarea>
     <script src="./javascript/remark-latest.min.js" type="text/javascript"></script>
     <script defer src="./javascript/katex.min.js"></script>
