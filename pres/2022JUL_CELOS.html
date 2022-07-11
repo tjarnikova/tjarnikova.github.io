@@ -164,11 +164,12 @@ projected to change over the coming century <br/> under different ozone and SSP 
 
 ---
 name: model         
-class: center 
-###Austral summer wind climatologies: NCEP, ERA5, UKESM1
+class: center
+<br/>  
+#Summer Wind Climatology and Decadal Changes
 <img style="width:97%"  src="./figs_2022_JUL_CELOS/summer_clim.png">
 
-The UKESM1 model shows similar spatial patterns and trends <br/> in the summer wind climatology as the ERA5 product.<br/><br/>
+The UKESM1 model shows similar spatial patterns and trends in the summer wind climatology as the ERA5 product.<br/><br/>
 Strong domain-wide increases in summer windspeed are visible, intensifying in the last 30 years. <br/><br/>
 The NCEP product shows slightly lower wind speeds (and stronger windspeed increases) than the other two. <br/><br/>
 
@@ -176,18 +177,19 @@ The NCEP product shows slightly lower wind speeds (and stronger windspeed increa
 <!-- http://127.0.0.1:8888/lab/workspaces/auto-z/tree/prelim_EVAL_forcing/CELOS-windclim.ipynb -->
 
 ---
-name: model         
-class: center 
-###Austral winter wind climatologies: NCEP, ERA, UKESM1
+name: model
+class: center         
+<br/>  
+#Winter Wind Climatology and Decadal Changes
 <img style="width:97%"  src="./figs_2022_JUL_CELOS/winter_clim.png">
 
-Winter wind speeds are universally stronger, <br/> but increases are more subtle and less spatially cohesive. <br/><br/>
-The UKESM1 model shows similar spatial patterns and trends <br/> in the summer wind climatology as the ERA5 product.<br/><br/>
-The NCEP product again shows lower wind speeds <br/> but stronger wind speed increases than the other two products. <br/><br/>
+Winter wind speeds are universally stronger, but increases are more subtle and less spatially cohesive. <br/><br/>
+The UKESM1 model shows similar spatial patterns and trends in the summer wind climatology as the ERA5 product.<br/><br/>
+The NCEP product again shows lower wind speeds but stronger wind speed increases than the other two products. <br/><br/>
 ---
 name: model         
 class: center 
-##Part 1: Quantitative Windspeed Timeseries Summary 
+##Windspeed Timeseries Comparison 
 
 <img style="width:53%"  src="./figs_2022_JUL_CELOS/windzonal.jpg">
 
@@ -198,20 +200,26 @@ NCEP windspeeds are continuously significantly lower than windspeeds  <br/> in t
 ---
 name: background        
 class: center 
-##Part 2: Scenarios of Wind Speed Evolution over the 21st century
+##Scenarios of Windspeed Evolution over the 21st century
 <br/>     <br/>  
 We will run 6 ozone/climate scenarios from 1940-2100, <br/> forcing PLANKTOM with UKESM1-derived atmospheric conditions:
 <br/><br/> 
-<img style="width:70%"  src="./figs_2022_JUL_CELOS/sspdesc.png">
+<img style="width:70%"  src="./figs_2022_JUL_CELOS/sspscen.png">
 <br/> 
 <br/> 
 Here I examine historic and projected changes in wind speed under these 6 scenarios. 
-
+<br/> 
+<br/> 
+.note[Fixed: Ozone depleting substances fixed at 1950 values.]<br/> 
+.note[Historic: Ozone depleting substances evolve realistically through time.]<br/> 
+.note[1990: Ozone depleting substances fixed at 1990 values.]<br/> <br/> 
+.note[Low Temp.: SSP 1-2.6]<br/>
+.note[High Temp.: SSP 3-7.0]
 ---
 name: background        
 class: center 
 ##PDF of the Historical Southern Ocean Wind Climatology: 1940-1960 
-<img style="width:44%"  src="./figs_2022_JUL_CELOS/wspd_1940-1960.jpg">
+<img style="width:55%"  src="./figs_2022_JUL_CELOS/wspd_1940-1960.jpg">
 
 As expected, from 1940-1960 wind magnitudes are 
 almost identical between 6 scenarios. <br/>
@@ -221,7 +229,7 @@ Winter winds are stronger and somewhat less variable.
 name: background        
 class: center 
 ##PDF of the Historical Southern Ocean Wind Climatology: 1940-1960 
-<img style="width:44%"  src="./figs_2022_JUL_CELOS/wspd_ghost_1940-1960.jpg">
+<img style="width:55%"  src="./figs_2022_JUL_CELOS/wspd_ghost_1940-1960.jpg">
 
 As expected, from 1940-1960 wind magnitudes are 
 almost identical between 6 scenarios. <br/>
@@ -231,28 +239,28 @@ Winter winds are stronger and somewhat less variable.
 ---
 name: background        
 class: center 
-##Southern Ocean Wind Climatology: present-day (2010-2030)
-<img style="width:44%"  src="./figs_2022_JUL_CELOS/wspd_2010-2030.jpg"><br/>
-Under the real-world and low-O$_3$(↓)  scenarios, much larger summer increases in windspeed <br/> have occurred to date than in the high-O$_3$(↑) scenario. 
-<br/> Winter increases have been more modest in all scenarios.  
+##Southern Ocean Wind Climatology: Present-Day (2010-2030)
+<img style="width:55%"  src="./figs_2022_JUL_CELOS/wspd_2010-2030.jpg"><br/>
+Under the historic and 1990 ozone scenarios, much larger summer increases in windspeed <br/> have occurred to date than in the fixed ozone scenario. 
+Winter increases have been more modest in all scenarios.  
 
 ---
 name: background        
 class: center 
 ##Southern Ocean Wind Climatology: 2040-2060
-<img style="width:44%"  src="./figs_2022_JUL_CELOS/wspd_2040-2060.jpg">
+<img style="width:55%"  src="./figs_2022_JUL_CELOS/wspd_2040-2060.jpg">
 <br/> 
-By mid-century, the highest summer windspeed increases occur in the low-O$_3$(↓), high CO$_2$(↑) scenario.<br/>
-SSP scenario-dependent changes in windspeed increases start being visible in summer. 
+By mid-century, the highest summer windspeed increases occur in the 1990 ozone, high temperature scenario.
+Temperature-dependent changes in windspeed increases start being visible in summer. 
 
 ---
 name: background        
 class: center 
 ##Southern Ocean Wind Climatology: 2080-2100
-<img style="width:44%"  src="./figs_2022_JUL_CELOS/wspd_2080-2100.jpg">
+<img style="width:55%"  src="./figs_2022_JUL_CELOS/wspd_2080-2100.jpg">
 <br/> 
-Under the natural ozone scenario (O$_3$R), SSP is the deciding factor in late-century wind speed evolution: <br/> 
-In the high CO$_2$(↑) scenario, summer winds continue speeding up, while in the low CO$_2$(↓), they slow down. 
+Under the historic ozone scenario, temperature is the deciding factor in late-century windspeed evolution: <br/> 
+In the high temp. scenario, summer winds continue speeding up, while in the low temp. scenario, they slow down. 
 
 ---
 name: background        
@@ -260,23 +268,23 @@ class: center
 ##Summary of Projected Southern Ocean Wind Speed Changes
 <img style="width:95%"  src="./figs_2022_JUL_CELOS/wspd_10yrmean.jpg">
 <br/>
-Higher windspeed increases are seen in low-O$_3$(↓) and high-CO$_2$(↑) scenarios, as expected <br/> <br/>
-Under the natural ozone scenario (O$_3$R), SSP is the deciding factor in late-century wind speed evolution: <br/> 
-In the high CO$_2$(↑) scenario, summer winds continue speeding up, while in the low CO$_2$(↓), they slow down. 
+
+Under the historical ozone scenario, temperature is the deciding factor in late-century wind speed evolution: <br/> 
+In the high temp. scenario, summer winds continue speeding up, while in the lower temp. scenario, they slow down. 
 
 ---
 name: background        
 class: center 
-##Ozone and Greenhouse Gas effects on Summer Southern Ocean Windspeed 
-<img style="width:95%"  src="./figs_2022_JUL_CELOS/fx_10yrmean.jpg">
+##Ozone and Greenhouse Gas Effects on Summer Southern Ocean Windspeed 
+<img style="width:65%"  src="./figs_2022_JUL_CELOS/fx_10yrmean.jpg">
 
-Both low-O$_3$(↓) and high-CO$_2$(↑) drive increases in summer wind speed.  <br/> <br/>
-Due to ozone recovery in the natural ozone (O$_3$R) scenario,  <br/> wind speeds in the natural (O$_3$R) and high-O$_3$(↑) scenarios converge by end-of-century.
+Both ozone depletion and temperature increase drive windspeed increases, as expected. <br/>
+Due to ozone recovery in the historic ozone scenario,  <br/> wind speeds in the historic and fixed ozone scenarios converge by end-of-century.
 
 ---
 name: background        
 class: center 
-##Summary and Future work
+##Summary and Future Work
 <img style="width:75%"  src="./figs_2022_JUL_CELOS/wspd_10yrmean.jpg">
 <br/>
 1. Both SSP and ozone concentration play a role in determining future wind speeds: 
