@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Liminal</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link rel="stylesheet" href="./stylesheets/katex.min.css">
+    <link rel="stylesheet" href="./stylesheets/liminal.css">
+
+    <style>            
+        /* Overall styling for slide */
+        .remark-slide-content {
+            font-size: 0.9em;
+            padding:0em 4em 0em 4em;
+            font-family: 'Georgia';
+            letter-spacing: 0.025em;
+        }
+     
+        /* Styling for level one header, #Text */
+        .remark-slide-content h1 {
+            font-size: 1.8em;
+            color: #0045f4;
+            font-family: 'Gill Sans';
+            font-weight: normal;
+            letter-spacing: 0.05em;
+        }
+        
+        /* Styling for level two header, ##Text */
+        .remark-slide-content h2 {
+            font-size: 1.4em;
+            color: #0045f4;
+            font-family: 'Gill Sans';
+            font-weight: normal;
+            letter-spacing: 0.05em;
+        }
+        
+        /* Styling for level three header, ###Text */
+        .remark-slide-content h3 {
+            font-size: 1.2em;
+            color: #0045f4;
+            font-family: 'Gill Sans';
+            font-weight: normal;
+            letter-spacing: 0.05em;
+        }
+
+        /* Styling for paragraphs and lists */
+        .remark-slide-content p,ol,ul {font-size: 1.0em;}
+
+        /* Styling for code blocks */
+        .remark-code,.remark-inline-code {font-family: 'Ubuntu Mono';}
+        
+        /* Styling for links */
+        a {text-decoration: none;color: #666666;}
+        /* Setting link properties is particular, do not change order below*/
+        a:visited {color: #666666}        
+        a:hover {color: #0045f4}
+        a:active,a#active {color: #FF9700;}
+        
+        /* Some special classes for the title slide */        
+        .title {
+            font-size: 2.09em;
+            color: #0045f4;
+            font-family: 'Gill Sans';
+            font-weight: regular;
+            letter-spacing: 0.05em;
+        }
+        
+        .author {
+            font-size: 1.2em;
+            color: #0045f4;
+            font-style: italic;
+            font-family: 'Gill Sans';
+            font-weight: regular;
+            letter-spacing: 0.02em;
+        }
+        
+        .coauthor {
+            font-size: 1.0em;
+            color: #606060;
+            font-weight: bold;
+            letter-spacing: 0.02em;
+        }
+        
+        .subtitle, .institution {
+            font-family: 'Gill Sans';
+            font-size: 0.8em;
+        }
+        
+        .date {
+            font-size: 1.2em;
+            font-family: 'Gill Sans';
+            font-style: italic;
+        }
+        
+        .note {
+            font-size: 0.8em;
+        }
+        
+        /* Other special classes */
+        .cite {
+            font-size: 0.8em;
+            color: #33AA99;
+            font-style: italic;
+        }
+        
+        .footnote {
+            position: absolute;
+            bottom: 2em;
+            left: 6em;
+            font-size: 0.7em;
+        }
+        
+        .caption {
+            font-size: 0.5em;
+            line-height: 10%;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <textarea id="source">
+class: center, middle                 
+.title[Towards Understanding the Changing Role of Stratospheric Ozone and Greenhouse Gases in Modifying the Southern Ocean Carbon Sink]     
+ <!-- .subtitle[] -->
+               
+.author[Tereza Jarníková$^{1}$, Corinne Le Quéré$^{1}$, David Willis$^{1}$, Steven Rumbold$^{2}$, Colin Jones$^{3}$]  
+
+.author[Challenger Conference 2022]
+<br/>    
+.date[September 7, 2022]
+<br/>    
+<img style="width:80%"  src="./figs_2022_JUL_CELOS/logos.png">
+<br/> <br/> 
+.note[1- School of Environmental Sciences, University of East Anglia]<br/> 
+.note[2- National Centre For Atmospheric Science, University of Reading]<br/> 
+.note[3- National Centre For Atmospheric Science, University of Leeds]
+
+---
+name: background        
+class: center
+<br/>
+#Guiding Questions
+<!-- <img style="width: 40%"  src="./figs_2022_JUL_CELOS/NASA_and_NOAA_Announce_Ozone_Hole_is_a_Double_Record_Breaker.png"><br/>
+.note[South Pole O$_3$ concentration, September 2006, NASA]
+<br/><br/> -->
+
+.left-column[<img style="width:65%"  src="./figs_2022_JUL_CELOS/NASA_and_NOAA_Announce_Ozone_Hole_is_a_Double_Record_Breaker.png">
+<br/>.note[South Pole O$_3$ concentration, September 2006, NASA]]  
+        
+.right-column[<img style="width:65%"  src="./figs_2022_JUL_CELOS/NASA_and_NOAA_Announce_Ozone_Hole_is_a_Double_Record_Breaker.png"> 
+<br/><br><br> .note[    Hello swampmonster]]  
+
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+
+
+
+
+.date[1- How are the Southern Ocean wind patterns
+projected to change  <br/> over the coming century under different ozone and SSP scenarios?]
+
+.date[2- How is the Southern Ocean carbon sink expected to evolve over the 21st century,  <br/> and what role do changing ozone and greenhouse gas concentrations play in this evolution?]
+
+---
+
+name: background        
+class: center 
+<br/>
+#Methods
+<img style="width: 65%"  src="./FIGS_ORGANIZED/2022SEP_CHALLENGER/UKESM_planktom.png"><br/>
+
+<br/><br/>
+
+.date[1- We extract six sets of atmospheric forcing from the UKESM1 Earth System Model, 
+<br/> corresponding to six different ozone and greenhouse gas scenarios.]
+
+.date[2- We analyze dominant trends in changing wind patterns and temperatures in these six scenarios.]
+
+.date[3- Using these six scenarios of forcing, we run PlankTOM12, <br/> 
+a NEMO3.6 based global ocean biogeochemical model, for the time period 1940-2100 <br/> 
+and analyze the evolution of the carbon sink.]
+
+---
+name: background        
+class: center 
+<br/>
+#Scenario Description
+<br/>   
+<br/>
+<img style="width:70%"  src="./figs_2022_JUL_CELOS/sspscen.png">
+<br/> 
+<br/> 
+.note[Fixed: Ozone depleting substances fixed at 1950 values.]<br/> 
+.note[Historic: Ozone depleting substances evolve realistically through time.]<br/> 
+.note[1990: Ozone depleting substances fixed at 1990 values.]<br/> <br/> 
+.note[Low Temp.: SSP 1-2.6]<br/>
+.note[High Temp.: SSP 3-7.0]
+
+---
+name: model         
+class: center
+<br/> 
+##UKESM1 Wind Evaluation: Summer Climatology and Decadal Changes
+.date[Due to stratospheric ozone depletion, summertime winds have intensfied significantly <br/> 
+ in the Southern Ocean in the second half of the 20th century. ]
+
+<img style="width:97%"  src="./figs_2022_JUL_CELOS/summer_clim.png">
+
+
+The UKESM1 model simulates this windspeed evolution in a comparable way to the standard ERA5 product.<br/>
+
+The NCEP product shows slightly lower wind speeds (and stronger windspeed increases) than the other two. <br/><br/>
+
+---
+name: model         
+class: center
+<br/> 
+##UKESM1 Wind Evaluation: Winter Climatology and Decadal Changes
+.date[Wintertime windspeed changes over the same period <br/> 
+have been more subtle and less spatially cohesive.]
+
+<img style="width:97%"  src="./figs_2022_JUL_CELOS/winter_clim.png">
+
+
+The UKESM1 model again shows similar trends in the winter wind climatology as the ERA5 product.<br/><br/>
+The NCEP product again shows lower wind speeds but stronger wind speed increases than the other two products. <br/><br/>
+
+---
+name: model         
+class: center 
+<br/> 
+##UKESM1 Wind Evaluation:  Timeseries Comparison 
+
+.date[Windspeed increases are stronger in summer than winter <br/> and are comparable between UKESM1 and ERA5.]
+
+<img style="width:53%"  src="./figs_2022_JUL_CELOS/windzonal.jpg">
+
+NCEP windspeeds are continuously significantly lower than windspeeds  <br/> in the other two products and show larger trends in both seasons. 
+---
+name: background        
+class: center 
+##PDF of the Historical Southern Ocean Wind Climatology: 1940-1960 
+<img style="width:55%"  src="./figs_2022_JUL_CELOS/wspd_1940-1960.jpg">
+
+As expected, from 1940-1960 wind magnitudes are 
+almost identical between 6 scenarios. <br/>
+Winter winds are stronger and somewhat less variable.  
+
+---
+name: background        
+class: center 
+##PDF of the Historical Southern Ocean Wind Climatology: 1940-1960 
+<img style="width:55%"  src="./figs_2022_JUL_CELOS/wspd_ghost_1940-1960.jpg"><br/>
+As expected, from 1940-1960 wind magnitudes are 
+almost identical between 6 scenarios. <br/>
+Winter winds are stronger and somewhat less variable.   
+
+
+---
+name: background        
+class: center 
+##Southern Ocean Wind Climatology: Present-Day (2010-2030)
+<img style="width:55%"  src="./figs_2022_JUL_CELOS/wspd_2010-2030.jpg"><br/>
+Under the historic and 1990 ozone scenarios, much larger summer increases in windspeed <br/> have occurred to date than in the fixed ozone scenario. 
+Winter increases have been more modest in all scenarios.  
+
+---
+name: background        
+class: center 
+##Southern Ocean Wind Climatology: 2040-2060
+<img style="width:55%"  src="./figs_2022_JUL_CELOS/wspd_2040-2060.jpg">
+<br/> 
+By mid-century, the highest summer windspeed increases occur in the 1990 ozone, high temperature scenario.
+Temperature-dependent changes in windspeed increases start being visible in summer. 
+
+---
+name: background        
+class: center 
+##Southern Ocean Wind Climatology: 2080-2100
+<img style="width:55%"  src="./figs_2022_JUL_CELOS/wspd_2080-2100.jpg">
+<br/> 
+Under the historic ozone scenario, temperature is the deciding factor in late-century windspeed evolution: <br/> 
+In the high temp. scenario, summer winds continue speeding up, while in the low temp. scenario, they slow down. 
+
+---
+name: background        
+class: center 
+#Summary of Projected Southern Ocean Wind Speed Changes
+.date[We see a clear footprint of the effect of both changing temperature<br/> and changing ozone concentration 
+in the UKESM1 atmospheric forcing.]
+<img style="width:75%"  src="./figs_2022_JUL_CELOS/wspd_10yrmean.jpg">
+<br/>
+.date[Under the historical ozone scenario, temperature is the deciding factor in late-century wind speed evolution: <br/>
+In the high temperature scenario, summer winds continue speeding up, <br/> while in the lower temperature scenario, they slow down.]
+
+---
+name: background        
+class: center 
+#Evolution of the Global and Southern Ocean Carbon Sink
+
+---
+name: background        
+class: center 
+#Evolution of the Global and Southern Ocean Carbon Sink
+<img style="width:60%"  src="./FIGS_ORGANIZED/2022SEP_CHALLENGER/csink1.png">
+
+---
+name: background        
+class: center 
+#Evolution of the Global and Southern Ocean Carbon Sink
+<img style="width:60%"  src="./FIGS_ORGANIZED/2022SEP_CHALLENGER/csink2.png">
+
+    </textarea>
+    <script src="./javascript/remark-latest.min.js" type="text/javascript"></script>
+    <script defer src="./javascript/katex.min.js"></script>
+    <script defer src="./javascript/auto-render.min.js"></script>
+    <!-- Call remark.js and KaTeX with liminal default settings -->
+    <script type="text/javascript" src="./javascript/call-javascript.js">
+</script>
+       
+</body>
+</html>
+
+<!-- ---
+name: model         
+class: center 
+##Wind Velocity Directionality: Summer
+
+<img style="width:50%"  src="./figs_2022_JUL_CELOS/download.png">
+<img style="width:50%"  src="./figs_2022_JUL_CELOS/download-1.png">
+
+MO and ERA5 have comparable wind directionality - dominance of
+westerly and northwesterly winds, with southeasterly 
+winds more represented in MO; both show comparable increases from 
+1950 to present-day.
+---
+name: model         
+class: center 
+##Wind Velocity Directionality: Winter
+
+<img style="width:50%"  src="./figs_2022_JUL_CELOS/download-2.png">
+<img style="width:50%"  src="./figs_2022_JUL_CELOS/download-3.png">
+
+MO and ERA5 have comparable wind directionality - increased
+westerly wind dominance in winter as opposed to summer. 
+MO again has less westerly dominance -->
+
+<!-- name: tools      
+class: center 
+##Research Questions
+
+### Chapter 2
+
+--
+
+Carbonate chemistry conditions are influenced by interacting biological and physical processes. 
+
+--
+
+How do physical oceanographic dynamics drive phytoplankton community dynamics in the Salish Sea, and what are the dominant spatial patterns of both?
+
+---
+name: tools      
+class: center 
+##Research Questions
+
+### Chapter 3
+
+--
+
+How has anthropogenic carbon from the air-sea and open-ocean boundary changed the inorganic carbon mass-balance and cycling pathways in the Salish Sea?
+
+--
+
+What are the implications of this mass-balance change on $\Omega_{arag}$?
+
+--
+
+How do the carbonate chemistry conditions of the Salish Sea compare with available measurements in the rest of the global coastal ocean, and what are the implications of these conditions on $\Omega_{arag}$ globally? -->
