@@ -11,6 +11,7 @@ let quotes=[
             'Považuji za nežádoucí zkrat, dokonce za svého druhu příkoří, aby po umělci zbylo jen a jen dílo a současně nebyl vydán počet i o jeho soukromém utrpení, kterým je nejen vykupoval, ale bez něhož by prostě nebyl ani občanem, ani otcem, doslova nikým.',
             'Talent bez statečnosti je jak dort s polevou z hoven.',
             'Mám na světě jen jediného přítele, totiž sebe sama.',
+            'Rozháranost, roztěkanost, nervozita, lehká zranitelnost, vydanost odkudkoli mohou být jen vnějšími podobami vnitřního pnutí a vypětí, maskami vnitřního zahledění, lépe, vytrženosti z věcí, paradoxním avízem soustředěnosti, kázně a píle a de facto nepřetržité vnitřní pracovitosti a sebepřipomínavosti.',
 
 ];
 
