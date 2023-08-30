@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Liminal</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link rel="stylesheet" href="./stylesheets/katex.min.css">
+    <link rel="stylesheet" href="./stylesheets/liminal.css">
+
+    <style>            
+        /* Overall styling for slide */
+        .remark-slide-content {
+            font-size: 0.9em;
+            padding:0em 4em 0em 4em;
+            font-family: 'Georgia';
+            letter-spacing: 0.025em;
+        }
+     
+        /* Styling for level one header, #Text */
+        .remark-slide-content h1 {
+            font-size: 1.8em;
+            color: #0045f4;
+            font-family: 'Gill Sans';
+            font-weight: normal;
+            letter-spacing: 0.05em;
+        }
+        
+        /* Styling for level two header, ##Text */
+        .remark-slide-content h2 {
+            font-size: 1.4em;
+            color: #0045f4;
+            font-family: 'Gill Sans';
+            font-weight: normal;
+            letter-spacing: 0.05em;
+        }
+        
+        /* Styling for level three header, ###Text */
+        .remark-slide-content h3 {
+            font-size: 1.2em;
+            color: #0045f4;
+            font-family: 'Gill Sans';
+            font-weight: normal;
+            letter-spacing: 0.05em;
+        }
+
+        /* Styling for paragraphs and lists */
+        .remark-slide-content p,ol,ul {font-size: 1.0em;}
+
+        /* Styling for code blocks */
+        .remark-code,.remark-inline-code {font-family: 'Ubuntu Mono';}
+        
+        /* Styling for links */
+        a {text-decoration: none;color: #666666;}
+        /* Setting link properties is particular, do not change order below*/
+        a:visited {color: #666666}        
+        a:hover {color: #0045f4}
+        a:active,a#active {color: #FF9700;}
+        
+        /* Some special classes for the title slide */        
+        .title {
+            font-size: 2.09em;
+            color: #0045f4;
+            font-family: 'Gill Sans';
+            font-weight: regular;
+            letter-spacing: 0.05em;
+        }
+        
+        .author {
+            font-size: 1.2em;
+            color: #0045f4;
+            font-style: italic;
+            font-family: 'Gill Sans';
+            font-weight: regular;
+            letter-spacing: 0.02em;
+        }
+        
+        .coauthor {
+            font-size: 1.0em;
+            color: #606060;
+            font-weight: bold;
+            letter-spacing: 0.02em;
+        }
+        
+        .subtitle, .institution {
+            font-family: 'Gill Sans';
+            font-size: 0.8em;
+        }
+        
+        .date {
+            font-size: 1.02em;
+            font-family: 'Gill Sans';
+            font-style: italic;
+        }
+        
+        .note {
+            font-size: 0.8em;
+        }
+        
+        /* Other special classes */
+        .cite {
+            font-size: 0.8em;
+            color: #33AA99;
+            font-style: italic;
+        }
+        
+        .footnote {
+            position: absolute;
+            bottom: 2em;
+            left: 6em;
+            font-size: 0.7em;
+        }
+        
+        .caption {
+            font-size: 0.5em;
+            line-height: 10%;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <textarea id="source">
+class: center, middle                 
+.title[OUR collective GCB Journey, 2023]     
+ <!-- .subtitle[] -->
+               
+.author[Tereza Jarníková]  
+  
+<!-- .author[RoSES Wrap-Up Meeting]<br/>  -->
+.date[Model Meeting <br/><br/>    August 30, 2023]
+<br/>    
+
+
+
+
+<br/> <br/> <br/><br/>
+<!-- url of slides for accessibility: <br/><br/> https://tjarnikova.github.io/pres/2022SEP_CHALLENGER.html -->
+
+---
+name: background        
+class: center
+
+##The model versions we've got
+<br/>
+<br/>
+<img style="width: 70%"  src="./FIGS_ORGANIZED/2023AUG_GROUPMEETING/rundesc.png">
+
+<a href="https://nettle-pajama-b85.notion.site/GCB-2023-run-specifications-and-monitor-setup-81add128b34a4d87a7630e03fc542ee3?pvs=4">{Link to Notion page with details}</a>
+
+---
+name: background        
+class: center 
+##We have a github page 
+It has the model code and run files (for CAL12 only, I will update for RIV12 and TOM12), scripts to make Tier 1 output, and links to docs.
+<br/><br/>
+<img style="width: 60%"  src="./FIGS_ORGANIZED/2023AUG_GROUPMEETING/github.png">
+<br/><br/>
+<a href="https://github.com/tjarnikova/GCB2023">{Link to Github repository}</a>
+
+---
+name: background        
+class: center 
+##We have a github page 
+Producing evaluation metrics (espectially the AMOC or the Revelle factor) is 
+slightly less straightforward and I've done it in notebooks, for now. Ancillary data 
+is unchanged from Dave's runs last year and I haven't redone it. 
+<br/><br/>
+<img style="width: 60%"  src="./FIGS_ORGANIZED/2023AUG_GROUPMEETING/evalscripts.png">
+<br/><br/>
+<a href="https://github.com/tjarnikova/GCB2023/blob/main/scripts/makeAMOC.ipynb">{Link to AMOC calculations}</a>
+
+---
+name: background        
+class: center 
+##AMOC drift...
+<br/><br/>
+<img style="width: 40%"  src="./FIGS_ORGANIZED/2023AUG_GROUPMEETING/amoc-cal12.png">
+<br/><br/>
+<img style="width: 40%"  src="./FIGS_ORGANIZED/2023AUG_GROUPMEETING/amoc-riv12.png">
+
+---
+name: background        
+class: center 
+## Here's where all the files are 
+<br/>
+(complete for CAL12, RIV12, no evaluations for TOM12)
+<br/><br/>
+<img style="width: 60%"  src="./FIGS_ORGANIZED/2023AUG_GROUPMEETING/tracksheet.png">
+
+<a href="https://docs.google.com/spreadsheets/d/186mFWSIaPWu7X_RldiGPrPzIuqyNupUR7XwoCBkMaIk/edit?usp=sharing">{Link to tracksheet}</a>
+
+---
+name: background        
+class: center 
+## Code to make universal GCB style regridded output 
+(without special packages, does not include evaluation codes)
+<br/><br/>
+<img style="width: 60%"  src="./FIGS_ORGANIZED/2023AUG_GROUPMEETING/gcbuniversal.png">
+
+<a href="https://github.com/tjarnikova/GCB_universal">{Link to universal scripts}</a>
+
+
+
+
+
+    </textarea>
+    <script src="./javascript/remark-latest.min.js" type="text/javascript"></script>
+    <script defer src="./javascript/katex.min.js"></script>
+    <script defer src="./javascript/auto-render.min.js"></script>
+    <!-- Call remark.js and KaTeX with liminal default settings -->
+    <script type="text/javascript" src="./javascript/call-javascript.js">
+</script>
+       
+</body>
+</html>
+
+<!-- name: background        
+class: center 
+##Evolution of the Global and Southern Ocean Carbon Sink: A First Look 
+
+
+<img style="width:60%"  src="./FIGS_ORGANIZED/2022SEP_CHALLENGER/csink1.png">
+
+.date[GHG scenario appears to be primary factor controlling the evolution of the Southern Ocean carbon sink.]<br/>
+.date[Under a low-temperature scenario, the Southern Ocean carbon sink decreases to preindustrial values by the end of the 21st century.]
+
+---
+name: background        
+class: center 
+##Evolution of the Global and Southern Ocean Carbon Sink: A First Look 
+<img style="width:60%"  src="./FIGS_ORGANIZED/2022SEP_CHALLENGER/csink2.png">
+
+.date[Under a high-temperature scenario, the global carbon sink appears to begin saturating in the mid 21st-century.]
+
+---
+name: background        
+class: center 
+##Windspeed Evolution Shows Clear Differences between the Three Ozone Scenarios 
+<img style="width:87%"  src="./FIGS_ORGANIZED/2022SEP_CHALLENGER/challenger/wind1.png">
+
+.date[Under a low-temp. scenario with historic ozone, Southern Ocean winds increase from 1950 to 2050,
+<br/>especially in the mid-latitudes, and then decrease back to 1950 levels by the end of the century.]
+
+---
+name: background        
+class: center 
+##Windspeed Evolution Shows Clear Differences between the Three Ozone Scenarios 
+<img style="width:87%"  src="./FIGS_ORGANIZED/2022SEP_CHALLENGER/challenger/wind2.png">
+
+.date[The Fixed Ozone scenario has lower winds to start, <br/> but differences decerase towards the end of the run.]
+
+---
+name: background        
+class: center 
+##Windspeed Evolution Shows Clear Differences between the Three Ozone Scenarios 
+<img style="width:87%"  src="./FIGS_ORGANIZED/2022SEP_CHALLENGER/challenger/wind3.png">
+
+.date[The 1990 Ozone scenario starts out similar to the historic scenario, <br/> but comparatively speeds up towards the end of the run.]
+
+---
+name: background        
+class: center 
+##This Windspeed Difference is Not Clearly Detectable in the Carbon Flux Signature
+<img style="width:87%"  src="./FIGS_ORGANIZED/2022SEP_CHALLENGER/challenger/Cflx1.png">
+<br/>
+.date[As expected, the Southern Ocean CO$_2$ flux increases from 1950 to 2050, and then decreases to 2100 as both wind speeds and GHG concentrations decline.]
+
+---
+name: background        
+class: center 
+##This Windspeed Difference is Not Clearly Detectable in the Carbon Flux Signature
+<img style="width:87%"  src="./FIGS_ORGANIZED/2022SEP_CHALLENGER/challenger/Cflx2.png">
+<br/><br/>
+.date[However, differences in carbon flux between the three scenarios are subtle and difficult to characterise.]
+
+---
+name: background        
+class: center 
+##This is Unexpected! Is it Real? 
+<img style="width:87%"  src="./FIGS_ORGANIZED/2022SEP_CHALLENGER/challenger/Cflx2.png">
+.date[Potential reasons: model CO$_2$ seasonality mismatch, compensation of effects between the sub-tropics and the polar regions,
+ imbalance of drivers, signal too small compared to noise. Under investigation...]<br/>
+
+---
+name: background        
+class: center 
+##Summary and Future Work
+
+.left-column[<img style="width:115%"  src="./figs_2022_JUL_CELOS/wspd_10yrmean.jpg">
+]  
+
+.right-column[<br/> <img style="width:100%"  src="./FIGS_ORGANIZED/2022SEP_CHALLENGER/csink0.png">]  
+
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+1. Both GHG increases and ozone depletion act to increase wind speed. Under a low-SSP scenario with ozone recovery, a reversal of the windspeed increases is possible by the end of the 21st century. <br/>  <br/> 
+2. GHG scenario has a much stronger influence on carbon cycling dynamics <br/> than ozone scenario and associated wind speed changes. <br/><br/>
+3. Under a high GHG scenario, the global ocean CO$_2$ sink begins to saturate in the 2060; <br/> the Southern Ocean sink does not. <br/><br/>
+4. Preliminary results suggest changes in windspeed associated with changing ozone concentration do not strongly modulate the Southern Ocean carbon sink in the future (why!?)  <br/> <br/> 
+
+.date[Tell me your thoughts on anything! T.Jarnikova@uea.ac.uk, @tjarnikova on Twitter]<br/>
+.note[] -->
+
+
+
+<!-- ---
+name: model         
+class: center 
+##Wind Velocity Directionality: Summer
+
+<img style="width:50%"  src="./figs_2022_JUL_CELOS/download.png">
+<img style="width:50%"  src="./figs_2022_JUL_CELOS/download-1.png">
+
+MO and ERA5 have comparable wind directionality - dominance of
+westerly and northwesterly winds, with southeasterly 
+winds more represented in MO; both show comparable increases from 
+1950 to present-day.
+---
+name: model         
+class: center 
+##Wind Velocity Directionality: Winter
+
+<img style="width:50%"  src="./figs_2022_JUL_CELOS/download-2.png">
+<img style="width:50%"  src="./figs_2022_JUL_CELOS/download-3.png">
+
+MO and ERA5 have comparable wind directionality - increased
+westerly wind dominance in winter as opposed to summer. 
+MO again has less westerly dominance -->
+
+<!-- name: tools      
+class: center 
+##Research Questions
+
+### Chapter 2
+
+--
+
+Carbonate chemistry conditions are influenced by interacting biological and physical processes. 
+
+--
+
+How do physical oceanographic dynamics drive phytoplankton community dynamics in the Salish Sea, and what are the dominant spatial patterns of both?
+
+---
+name: tools      
+class: center 
+##Research Questions
+
+### Chapter 3
+
+--
+
+How has anthropogenic carbon from the air-sea and open-ocean boundary changed the inorganic carbon mass-balance and cycling pathways in the Salish Sea?
+
+--
+
+What are the implications of this mass-balance change on $\Omega_{arag}$?
+
+--
+
+How do the carbonate chemistry conditions of the Salish Sea compare with available measurements in the rest of the global coastal ocean, and what are the implications of these conditions on $\Omega_{arag}$ globally? -->

@@ -13,6 +13,7 @@ let quotes=[
             'Mám na světě jen jediného přítele, totiž sebe sama.',
             'Rozháranost, roztěkanost, nervozita, lehká zranitelnost, vydanost odkudkoli mohou být jen vnějšími podobami vnitřního pnutí a vypětí, maskami vnitřního zahledění, lépe, vytrženosti z věcí, paradoxním avízem soustředěnosti, kázně a píle a de facto nepřetržité vnitřní pracovitosti a sebepřipomínavosti.',
 
+
 ];
 
 
