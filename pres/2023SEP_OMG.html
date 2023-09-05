@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Liminal</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link rel="stylesheet" href="./stylesheets/katex.min.css">
+    <link rel="stylesheet" href="./stylesheets/liminal.css">
+
+    <style>            
+        /* Overall styling for slide */
+        .remark-slide-content {
+            font-size: 0.9em;
+            padding:0em 4em 0em 4em;
+            font-family: 'Georgia';
+            letter-spacing: 0.025em;
+        }
+     
+        /* Styling for level one header, #Text */
+        .remark-slide-content h1 {
+            font-size: 1.8em;
+            color: #0045f4;
+            font-family: 'Gill Sans';
+            font-weight: normal;
+            letter-spacing: 0.05em;
+        }
+        
+        /* Styling for level two header, ##Text */
+        .remark-slide-content h2 {
+            font-size: 1.4em;
+            color: #0045f4;
+            font-family: 'Gill Sans';
+            font-weight: normal;
+            letter-spacing: 0.05em;
+        }
+        
+        /* Styling for level three header, ###Text */
+        .remark-slide-content h3 {
+            font-size: 1.2em;
+            color: #0045f4;
+            font-family: 'Gill Sans';
+            font-weight: normal;
+            letter-spacing: 0.05em;
+        }
+
+        /* Styling for paragraphs and lists */
+        .remark-slide-content p,ol,ul {font-size: 1.0em;}
+
+        /* Styling for code blocks */
+        .remark-code,.remark-inline-code {font-family: 'Ubuntu Mono';}
+        
+        /* Styling for links */
+        a {text-decoration: none;color: #666666;}
+        /* Setting link properties is particular, do not change order below*/
+        a:visited {color: #666666}        
+        a:hover {color: #0045f4}
+        a:active,a#active {color: #FF9700;}
+        
+        /* Some special classes for the title slide */        
+        .title {
+            font-size: 2.09em;
+            color: #0045f4;
+            font-family: 'Gill Sans';
+            font-weight: regular;
+            letter-spacing: 0.05em;
+        }
+        
+        .author {
+            font-size: 1.2em;
+            color: #0045f4;
+            font-style: italic;
+            font-family: 'Gill Sans';
+            font-weight: regular;
+            letter-spacing: 0.02em;
+        }
+        
+        .coauthor {
+            font-size: 1.0em;
+            color: #606060;
+            font-weight: bold;
+            letter-spacing: 0.02em;
+        }
+        
+        .subtitle, .institution {
+            font-family: 'Gill Sans';
+            font-size: 0.8em;
+        }
+        
+        .date {
+            font-size: 1.02em;
+            font-family: 'Gill Sans';
+            font-style: italic;
+        }
+        
+        .note {
+            font-size: 0.8em;
+        }
+        
+        /* Other special classes */
+        .cite {
+            font-size: 0.8em;
+            color: #33AA99;
+            font-style: italic;
+        }
+        
+        .footnote {
+            position: absolute;
+            bottom: 2em;
+            left: 6em;
+            font-size: 0.7em;
+        }
+        
+        .caption {
+            font-size: 0.5em;
+            line-height: 10%;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <textarea id="source">
+class: center, middle                 
+.title[Physical and Biogeochemical <br/> Ocean Effects of Changing
+Windspeed <br/> over the Southern Ocean ]     
+ <!-- .subtitle[] -->
+               
+.author[Tereza Jarníková$^{1}$, Corinne Le Quéré$^{1}$, Steven Rumbold$^{2}$, Colin Jones$^{3}$]  
+  
+<!-- .author[RoSES Wrap-Up Meeting]<br/>  -->
+.date[Ocean Modelling Group Meeting, Southampton, UK <br/><br/>    September 5, 2023]
+<br/>    
+
+
+<img style="width:60%"  src="./FIGS_ORGANIZED/2022SEP_CHALLENGER/logos.png">
+<br/> <br/> 
+.note[1- School of Environmental Sciences, University of East Anglia]<br/> 
+.note[2- National Centre For Atmospheric Science, University of Reading]<br/> 
+.note[3- National Centre For Atmospheric Science, University of Leeds]
+<br/> <br/> <br/><br/>
+<!-- url of slides for accessibility: <br/><br/> https://tjarnikova.github.io/pres/2022SEP_CHALLENGER.html -->
+
+---
+name: background        
+class: center
+<br/>
+#Guiding Questions
+<!-- <img style="width: 40%"  src="./figs_2022_JUL_CELOS/NASA_and_NOAA_Announce_Ozone_Hole_is_a_Double_Record_Breaker.png"><br/>
+.note[South Pole O$_3$ concentration, September 2006, NASA]
+<br/><br/> -->
+
+.left-column[<img style="width:55%"  src="./figs_2022_JUL_CELOS/NASA_and_NOAA_Announce_Ozone_Hole_is_a_Double_Record_Breaker.png">
+<br/><br/><br/>.note[South Pole O$_3$ concentration, September 2006, NASA]]  
+        
+.right-column[<br/><img style="width:80%"  src="./FIGS_ORGANIZED/2022SEP_CHALLENGER/co2meins.png"> 
+<br/><br><br> .note[Two future greenhouse gas scenarios, <br/> Meinshausen et al., 2020]  ]
+
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+
+.date[1- How are the Southern Ocean wind patterns projected to change over the coming century <br/> under different ozone and SSP scenarios?]
+
+.date[2- What are the effects of changing wind patterns on the physical ocean sea state?]
+
+.date[3- What are the effects on the Southern Ocean carbon flux?]
+
+---
+
+name: background        
+class: center 
+<br/>
+#Methods
+<img style="width: 65%"  src="./FIGS_ORGANIZED/2022SEP_CHALLENGER/UKESM_planktom.png"><br/>
+
+<br/><br/>
+
+.date[We run the UKESM under six different ozone and greenhouse gas scenarios <br/>
+ and analyze dominant trends in changing wind patterns.]
+
+.date[We analyze the physical and biogeochemical responses <br/> of the UKESM ocean model 
+to these six scenarios.]
+
+.date[In parallel, we use the atmospheric fields from the six scenarios of UKESM to 
+run a global ocean biogeochemical model (PlankTOM12) and compare its 
+physical and carbon responses to those of UKESM.]
+
+
+<!-- we run PlankTOM12, <br/> 
+a NEMO3.6 based global ocean biogeochemical model, for the time period 1940-2100 <br/> 
+and analyze the evolution of the carbon sink. ] -->
+
+---
+name: background        
+class: center 
+<br/>
+#Scenario Description
+<br/>   
+<br/>
+<img style="width:70%"  src="./figs_2022_JUL_CELOS/sspscen.png">
+<br/> 
+<br/> 
+.note[Fixed: Ozone depleting substances fixed at 1950 values.]<br/> 
+.note[Historic: Ozone depleting substances evolve realistically through time.]<br/> 
+.note[1990: Ozone depleting substances fixed at 1990 values.]<br/> <br/> 
+.note[Low Temp.: SSP 1-2.6]<br/>
+.note[High Temp.: SSP 3-7.0]
+
+---
+
+name: model         
+class: center
+#Seasonal Wind Speed Climatology, 1950-2020
+
+<!-- .date[Due to stratospheric ozone depletion, summertime winds have intensfied significantly <br/> 
+ in the Southern Ocean in the second half of the 20th century. ] -->
+
+<img style="width:43%"  src="./FIGS_ORGANIZED/2023JUL_CELOS/maps.png">
+
+Climatological spatial windspeed structure is similar in UKESM and ERA. <br/>  UKESM has typically stronger winds than ERA.
+
+---
+name: model         
+class: center
+#UKESM1 Wind Evaluation Against ERA5
+<!-- .date[Due to stratospheric ozone depletion, summertime winds have intensfied significantly <br/> 
+ in the Southern Ocean in the second half of the 20th century. ] -->
+
+
+<img style="width:55%"  src="./FIGS_ORGANIZED/2023JUL_CELOS/windhov.png">
+<!-- https://adaood01.uea.ac.uk/node/c0126.hpc.private/34418/notebooks/scratch/SOZONE/windAnalyis/paperFigures/regridded_partAfigures.ipynb -->
+
+Windspeed increases in UKESM are more zonally localized than in the ERA reanalysis product. A better match is found south of -50 degrees. 
+
+---
+name: background        
+class: center 
+##Southern Ocean Wind Climatology PDF: 1940-1960 
+<img style="width:52%"  src="./figs_2022_JUL_CELOS/wspd_1940-1960.jpg"><br/>
+As expected, from 1940-1960 wind magnitudes are 
+almost identical between 6 scenarios. <br/>
+Winter winds are stronger and somewhat less variable.  
+
+---
+name: background        
+class: center 
+##Southern Ocean Wind Climatology PDF: Present-Day (2010-2030)
+<img style="width:52%"  src="./figs_2022_JUL_CELOS/wspd_2010-2030.jpg"><br/>
+Under the historic and 1990 ozone scenarios, much larger summer increases in windspeed <br/> have occurred to date than in the fixed ozone scenario. 
+Winter increases have been more modest in all scenarios.  
+
+---
+name: background        
+class: center 
+##Southern Ocean Wind Climatology PDF: 2040-2060
+<img style="width:52%"  src="./figs_2022_JUL_CELOS/wspd_2040-2060.jpg">
+<br/> 
+By mid-century, the highest summer windspeed increases occur in the 1990 ozone, high temperature scenario.
+Temperature-dependent changes in windspeed increases start being visible in summer. 
+
+---
+name: background        
+class: center 
+##Southern Ocean Wind Climatology PDF: 2080-2100
+<img style="width:52%"  src="./figs_2022_JUL_CELOS/wspd_2080-2100.jpg">
+<br/> 
+Under the historic ozone scenario, temperature is the deciding factor in late-century windspeed evolution: 
+In the high temp. scenario, summer winds continue speeding up, while in the low temp. scenario, they slow down. 
+
+---
+name: background        
+class: center 
+##Summary of Projected Southern Ocean Wind Speed Changes
+.date[We see a clear footprint of the effect of both changing temperature<br/> and changing ozone concentration 
+in the UKESM1 atmospheric forcing.]
+<img style="width:75%"  src="./figs_2022_JUL_CELOS/wspd_10yrmean.jpg">
+<br/>
+Under the historical ozone scenario, temperature is the deciding factor in late-century wind speed evolution: <br/>
+In the high temperature scenario, summer winds continue speeding up, <br/> while in the lower temperature scenario, they slow down.
+
+
+
+---
+name: background        
+class: center 
+##Effect of Ozone on Wind Speed 
+<br/><br/>
+<img style="width:90%"  src="./FIGS_ORGANIZED/2023JUL_CELOS/ozoneeffect.png">
+<br/>
+
+Ozone depletion leads to a summertime increase in windspeed of around 0.8 m/s from 1950-2020 that then persists throughout the 21s century. 
+<!-- Under the historical ozone scenario, temperature is the deciding factor in late-century wind speed evolution: <br/>
+In the high temperature scenario, summer winds continue speeding up, <br/> while in the lower temperature scenario, they slow down. -->
+---
+name: background        
+class: center 
+##Effect of GHG scenario on Wind Speed 
+<br/><br/>
+<img style="width:90%"  src="./FIGS_ORGANIZED/2023JUL_CELOS/tempeffect.png">
+<br/>
+
+Increased temperature due to GHG emissions leads to a slightly smaller gradual windspeed increase throughout the 21st century.
+The increase is strongest in summer but present in all seasons. 
+
+---
+name: background        
+class: center 
+##Physical Ocean Response: Effects on Mixed-Layer Depth
+
+<img style="width:90%"  src="./FIGS_ORGANIZED/2023JUL_CELOS/mldseas.png">
+<!-- /gpfs/home/mep22dku/scratch/SOZONE/windAnalyis/paperFigures/ootw/Fig-MLD-SST-OVER-15panel.ipynb -->
+<br/><br/>
+In summer, mixed layer depth shoaling due to 
+GHG-induced thermal stratification<br/> is opposed by 
+deepening due to windspeed increases <br/> that are present in ozone-depletion scenarios. 
+
+---
+name: background        
+class: center 
+##Preliminary Results: Overturning
+
+<img style="width:90%"  src="./FIGS_ORGANIZED/2023JUL_CELOS/over-ozone.png">
+<!-- /gpfs/home/mep22dku/scratch/SOZONE/overturning/long_ts_overturning.ipynb -->
+<br/><br/>
+Wind speed increases due to ozone depletion strengthen meridional overturning to the end of the 21st century.
+
+---
+name: background        
+class: center 
+##Preliminary Results: Overturning
+
+<img style="width:90%"  src="./FIGS_ORGANIZED/2023JUL_CELOS/over-temp.png">
+<!-- /gpfs/home/mep22dku/scratch/SOZONE/overturning/long_ts_overturning.ipynb -->
+<br/><br/>
+Increased thermal stratification in a high GHG scenario also strenghtens meridional overturning to the end of the 21st century.
+
+---
+name: background        
+class: center 
+##Evolution of the Southern Ocean Carbon Sink
+
+<img style="width:90%"  src="./FIGS_ORGANIZED/2023JUL_CELOS/sosink-ukesm.png">
+<!-- https://adaood01.uea.ac.uk/node/c0126.hpc.private/34418/notebooks/scratch/SOZONE/MEDUSA/Cflx_MED_v2.ipynb -->
+<br/><br/>
+
+Taken over the entire Southern Ocean, UKESM carbon sink projections show almost no sensitivity to ozone scenario. 
+
+
+---
+name: background        
+class: center 
+##Evolution of the Southern Ocean Carbon Sink
+
+<img style="width:90%"  src="./FIGS_ORGANIZED/2023JUL_CELOS/sosink-both.png">
+<!-- https://adaood01.uea.ac.uk/node/c0126.hpc.private/34418/notebooks/scratch/SOZONE/MEDUSA/Cflx_MED_v2.ipynb -->
+<br/><br/>
+
+Taken over the entire Southern Ocean, UKESM carbon sink projections show almost no sensitivity to ozone scenario. 
+Neither do the TOM12 ones. 
+
+---
+name: background        
+class: center 
+##Evolution of the Southern Ocean Carbon Sink
+
+.left-column[<img style="width:100%"  src="./FIGS_ORGANIZED/2023JUL_CELOS/ukesmhov.png">]
+
+        
+.right-column[<img style="width:100%"  src="./FIGS_ORGANIZED/2023JUL_CELOS/tomhov.png">]
+
+Intensification of CO$_2$ flux in both directions with windspeed increases may result in compensatory effects. 
+
+---
+name: background        
+class: center 
+##Evolution of the Southern Ocean Carbon Sink
+<br/><br/>
+
+.left-column[<img style="width:100%"  src="./figs_2022_JUL_CELOS/wspd_10yrmean.jpg">]
+
+        
+.right-column[<br/><img style="width:90%"  src="./FIGS_ORGANIZED/2023JUL_CELOS/sosink-both.png">]
+
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+
+- Strong ozone and GHG-related summertime windspeed and temperature increases lead to clear 
+effects on the physical oceanography of the Southern Ocean. 
+
+- Two very different biogeochemical models agree well on both the total magnitude of the Southern Ocean 
+carbon sink and its low sensitivity to ozone scenario. 
+
+
+
+
+
+
+    </textarea>
+    <script src="./javascript/remark-latest.min.js" type="text/javascript"></script>
+    <script defer src="./javascript/katex.min.js"></script>
+    <script defer src="./javascript/auto-render.min.js"></script>
+    <!-- Call remark.js and KaTeX with liminal default settings -->
+    <script type="text/javascript" src="./javascript/call-javascript.js">
+</script>
+       
+</body>
+</html>
+
+<!-- name: background        
+class: center 
+##Evolution of the Global and Southern Ocean Carbon Sink: A First Look 
+
+
+<img style="width:60%"  src="./FIGS_ORGANIZED/2022SEP_CHALLENGER/csink1.png">
+
+.date[GHG scenario appears to be primary factor controlling the evolution of the Southern Ocean carbon sink.]<br/>
+.date[Under a low-temperature scenario, the Southern Ocean carbon sink decreases to preindustrial values by the end of the 21st century.]
+
+---
+name: background        
+class: center 
+##Evolution of the Global and Southern Ocean Carbon Sink: A First Look 
+<img style="width:60%"  src="./FIGS_ORGANIZED/2022SEP_CHALLENGER/csink2.png">
+
+.date[Under a high-temperature scenario, the global carbon sink appears to begin saturating in the mid 21st-century.]
+
+---
+name: background        
+class: center 
+##Windspeed Evolution Shows Clear Differences between the Three Ozone Scenarios 
+<img style="width:87%"  src="./FIGS_ORGANIZED/2022SEP_CHALLENGER/challenger/wind1.png">
+
+.date[Under a low-temp. scenario with historic ozone, Southern Ocean winds increase from 1950 to 2050,
+<br/>especially in the mid-latitudes, and then decrease back to 1950 levels by the end of the century.]
+
+---
+name: background        
+class: center 
+##Windspeed Evolution Shows Clear Differences between the Three Ozone Scenarios 
+<img style="width:87%"  src="./FIGS_ORGANIZED/2022SEP_CHALLENGER/challenger/wind2.png">
+
+.date[The Fixed Ozone scenario has lower winds to start, <br/> but differences decerase towards the end of the run.]
+
+---
+name: background        
+class: center 
+##Windspeed Evolution Shows Clear Differences between the Three Ozone Scenarios 
+<img style="width:87%"  src="./FIGS_ORGANIZED/2022SEP_CHALLENGER/challenger/wind3.png">
+
+.date[The 1990 Ozone scenario starts out similar to the historic scenario, <br/> but comparatively speeds up towards the end of the run.]
+
+---
+name: background        
+class: center 
+##This Windspeed Difference is Not Clearly Detectable in the Carbon Flux Signature
+<img style="width:87%"  src="./FIGS_ORGANIZED/2022SEP_CHALLENGER/challenger/Cflx1.png">
+<br/>
+.date[As expected, the Southern Ocean CO$_2$ flux increases from 1950 to 2050, and then decreases to 2100 as both wind speeds and GHG concentrations decline.]
+
+---
+name: background        
+class: center 
+##This Windspeed Difference is Not Clearly Detectable in the Carbon Flux Signature
+<img style="width:87%"  src="./FIGS_ORGANIZED/2022SEP_CHALLENGER/challenger/Cflx2.png">
+<br/><br/>
+.date[However, differences in carbon flux between the three scenarios are subtle and difficult to characterise.]
+
+---
+name: background        
+class: center 
+##This is Unexpected! Is it Real? 
+<img style="width:87%"  src="./FIGS_ORGANIZED/2022SEP_CHALLENGER/challenger/Cflx2.png">
+.date[Potential reasons: model CO$_2$ seasonality mismatch, compensation of effects between the sub-tropics and the polar regions,
+ imbalance of drivers, signal too small compared to noise. Under investigation...]<br/>
+
+---
+name: background        
+class: center 
+##Summary and Future Work
+
+.left-column[<img style="width:115%"  src="./figs_2022_JUL_CELOS/wspd_10yrmean.jpg">
+]  
+
+.right-column[<br/> <img style="width:100%"  src="./FIGS_ORGANIZED/2022SEP_CHALLENGER/csink0.png">]  
+
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+1. Both GHG increases and ozone depletion act to increase wind speed. Under a low-SSP scenario with ozone recovery, a reversal of the windspeed increases is possible by the end of the 21st century. <br/>  <br/> 
+2. GHG scenario has a much stronger influence on carbon cycling dynamics <br/> than ozone scenario and associated wind speed changes. <br/><br/>
+3. Under a high GHG scenario, the global ocean CO$_2$ sink begins to saturate in the 2060; <br/> the Southern Ocean sink does not. <br/><br/>
+4. Preliminary results suggest changes in windspeed associated with changing ozone concentration do not strongly modulate the Southern Ocean carbon sink in the future (why!?)  <br/> <br/> 
+
+.date[Tell me your thoughts on anything! T.Jarnikova@uea.ac.uk, @tjarnikova on Twitter]<br/>
+.note[] -->
+
+
+
+<!-- ---
+name: model         
+class: center 
+##Wind Velocity Directionality: Summer
+
+<img style="width:50%"  src="./figs_2022_JUL_CELOS/download.png">
+<img style="width:50%"  src="./figs_2022_JUL_CELOS/download-1.png">
+
+MO and ERA5 have comparable wind directionality - dominance of
+westerly and northwesterly winds, with southeasterly 
+winds more represented in MO; both show comparable increases from 
+1950 to present-day.
+---
+name: model         
+class: center 
+##Wind Velocity Directionality: Winter
+
+<img style="width:50%"  src="./figs_2022_JUL_CELOS/download-2.png">
+<img style="width:50%"  src="./figs_2022_JUL_CELOS/download-3.png">
+
+MO and ERA5 have comparable wind directionality - increased
+westerly wind dominance in winter as opposed to summer. 
+MO again has less westerly dominance -->
+
+<!-- name: tools      
+class: center 
+##Research Questions
+
+### Chapter 2
+
+--
+
+Carbonate chemistry conditions are influenced by interacting biological and physical processes. 
+
+--
+
+How do physical oceanographic dynamics drive phytoplankton community dynamics in the Salish Sea, and what are the dominant spatial patterns of both?
+
+---
+name: tools      
+class: center 
+##Research Questions
+
+### Chapter 3
+
+--
+
+How has anthropogenic carbon from the air-sea and open-ocean boundary changed the inorganic carbon mass-balance and cycling pathways in the Salish Sea?
+
+--
+
+What are the implications of this mass-balance change on $\Omega_{arag}$?
+
+--
+
+How do the carbonate chemistry conditions of the Salish Sea compare with available measurements in the rest of the global coastal ocean, and what are the implications of these conditions on $\Omega_{arag}$ globally? -->
