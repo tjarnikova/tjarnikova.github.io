@@ -53,20 +53,95 @@
 <!-- <img style="width:6%"  src="Josef.png"> -->
 <br>
   <section id="about">
-<h2> A set of colourmaps extracted from old Czechoslovak Railways promotional posters </h2> 
+<h2> Colourmaps from old Czechoslovak Railways travel posters </h2> 
 <br>
-Text text text
-<a href></a>
+I made this set of colourmaps from 1930s Czechoslovak Railways posters over a series of two rainy 
+afternoons in October 2025. Posters were sourced from around the Internet, colours were extracted 
+using Claude, followed by post-hoc manual tweaks. Code to make the example figures can be found 
+<a href="https://github.com/tjarnikova/AMOC-PLANKTOM/blob/main/AMOC-LoP-202510/railway-cmap.ipynb">here</a>. 
+I give the maps as a python list of hex codes, I use them in Python but of course they're usable anywhere you 
+use a hex code. Free to use, acknowledgement appreciated. 
 
 <br> <h3> Český Ráj </h3> <br>
 
-<img src="./vlaky/ceskyraj-cmap.jpg" alt="snax" width="800"> <br><br>
+<img src="./vlaky/ceskyraj-cmap.jpg" alt="" width="900"> <br><br>
 
 ceskyraj_6 = ['#B8734E', '#D4A562', '#6B8BA8', '#4B6B8C', '#8B5B7A', '#3A2F28']<br>
 ceskyraj_12 = ['#A85C3C', '#B8734E', '#D49558', '#D4A562', '#E5C485', '#9CB68A', '#6B8B72', '#6B8BA8', '#4B6B8C', '#8B5B7A', '#5B3F4A', '#3A2F28']
 <br><br>
 <i>Illustrator: Miloš Endler</i>
 <br>
+
+<br> <h3> Ještěd </h3> <br>
+
+<img src="./vlaky/jested-cmap.jpg" alt="" width="900"> <br><br>
+
+jested_6 = ['#D86B45', '#D4B870', '#8FAB7C', '#5B7B8C', '#6B8BAC', '#3A5B48']<br>
+jested_12 = ['#C85B3A', '#D86B45', '#E59B58', '#D4B870', '#E5D090', '#B8C88C', '#8FAB7C', '#6B8B78', '#5B7B8C', '#6B8BAC', '#4B6B5C', '#3A5B48']
+<br><br>
+<i>Illustrator: Miloš Endler, 1934</i>
+<br>
+
+<br> <h3> Červený Kostelec </h3> <br>
+
+<img src="./vlaky/kostelec-cmap.jpg" alt="" width="900"> <br><br>
+
+kostelec_6 = ['#C94B3C', '#E47A5C', '#A8B89C', '#6B9B7D', '#7FA4B8', '#4A3830']<br>
+kostelec_12 = ['#B23D32', '#C94B3C', '#E47A5C', '#D89B7A', '#E5C9A8', '#C8D4B8', '#A8B89C', '#6B9B7D', '#7FA4B8', '#5B7A8C', '#4A3830', '#2A1F1A']
+<br><br>
+<i>Illustrator: Ladislav Horák, ~1930</i>
+<br>
+
+<br> <h3> Krkonoše </h3> <br>
+
+<img src="./vlaky/krkonose-cmap.jpg" alt="" width="900"> <br><br>
+
+krkonose_6 = ['#E5A542', '#C4D858', '#6B8B5C', '#4B6B8C', '#7A9BAC', '#8B6B47']<br>
+krkonose_12 = ['#B87A3C', '#E5A542', '#F5C855', '#D4DB6A', '#C4D858', '#A8C850', '#6B8B5C', '#5B7B6C', '#4B6B8C', '#7A9BAC', '#8B6B47', '#5B4B38']
+<br><br>
+<i>Illustrator: Miloš Endler</i>
+<br>
+
+<br> <h3> Prachovské skály - jezero </h3> <br>
+
+<img src="./vlaky/prachovjezero-cmap.jpg" alt="" width="900"> <br><br>
+
+prachovjezero_6 = ['#E85A2A', '#F4A63D', '#6B8C3E', '#5B9BAD', '#4A6B8A', '#6B3428']<br>
+prachovjezero_12 = ['#D84B28', '#E85A2A', '#F27435', '#F4A63D', '#D4B665', '#89A648', '#6B8C3E', '#4E7054', '#5B9BAD', '#4A6B8A', '#6B3428', '#3D2820']
+<br><br>
+<i>Illustrator: Ladislav Horák</i>
+<br>
+
+<br> <h3> Prachovské skály - údolí </h3> <br>
+
+<img src="./vlaky/prachovskaly-cmap.jpg" alt="" width="900"> <br><br>
+
+prachovskaly_6 = ['#B8844E', '#D4A865', '#6B8B5C', '#4B7B8C', '#2B5B8C', '#1B3F5C']<br>
+prachovskaly_12 = ['#9B6B3C', '#B8844E', '#C89B5A', '#D4A865', '#E5C68A', '#8BA872', '#6B8B5C', '#4B6B5A', '#5B8B9C', '#4B7B8C', '#2B5B8C', '#1B3F5C']
+<br><br>
+<i>Illustrator: Ladislav Horák, 1936</i>
+<br>
+
+<br> <h3> Tatry </h3> <br>
+
+<img src="./vlaky/tatry-cmap.jpg" alt="" width="900"> <br><br>
+
+tatry_6 = ['#9B7850', '#D4C8A8', '#5B7F68', '#7BA6BC', '#A8BECF', '#3A4F3C']<br>
+tatry_12 = ['#7A5F40', '#9B7850', '#C4B090', '#E5D8B8', '#B8D090', '#8FAB80', '#5B7F68', '#5B7B7C', '#7BA6BC', '#A8BECF', '#3A4F3C', '#2B3A2E']
+<br><br>
+<i>Illustrator: R.S. Vajdler, ~1935</i>
+<br>
+
+<br> <h3> Ďumbier </h3> <br>
+
+<img src="./vlaky/dumbier-cmap.jpg" alt="" width="900"> <br><br>
+
+dumbier_6 = ['#D87845', '#E5C8A0', '#4B7BC2', '#6B9BD8', '#7AB8E5', '#1A2B3A']<br>
+dumbier_12 = ['#C86838', '#D87845', '#E59B68', '#E5C8A0', '#F5E8D0', '#A8C8E5', '#7AB8E5', '#6B9BD8', '#4B7BC2', '#3A5B8C', '#2A3B5C', '#1A2B3A']
+<br><br>
+<i>Illustrator: V. Hipman, ~1932</i>
+<br>
+
 
 
 </section>
