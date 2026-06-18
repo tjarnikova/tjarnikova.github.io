@@ -93,3 +93,8 @@ article .content h2:before { color: #0050FF !important; }
 
 /* Code copy button */
 pre .code-copy-btn:hover { color: #0050FF !important; }
+
+/* Breathing room between links in the cti list */
+#about a {
+  line-height: 1.7;
+}
