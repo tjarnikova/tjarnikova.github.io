@@ -6,152 +6,107 @@
    Font:      Gill Sans (never bold)
    ============================================= */
 
-/* Font stack — Gill Sans as system font, good sans-serif fallbacks */
+/* Font stack */
 body, h1, .h1, h2, .h2, h3, h4, h5, h6,
 #header h1, #header .h1,
 .tooltipped::after {
   font-family: "Gill Sans", "Gill Sans MT", "Gill Sans Nova", Calibri, "Trebuchet MS", sans-serif !important;
-  font-weight: 400 !important; /* never bold */
+  font-weight: 400 !important;
 }
 
-/* Kill bold everywhere */
 *, *::before, *::after {
   font-weight: 400 !important;
 }
 
-/* Base text and body */
-body {
-  color: #555555;
-}
+/* Base */
+body { color: #555555; }
+html { border-top-color: #555555 !important; }
 
-html {
-  border-top-color: #555555;
-}
+/* Headings */
+h1, .h1 { color: #0050FF !important; }
+h2, .h2, h3 { color: #555555 !important; }
 
-/* Headings — lighter gray base, never bold */
-h1, .h1 {
-  color: #0050FF;
-}
+/* All links — kill pink hover everywhere */
+a { color: #555555 !important; }
+a:hover { color: #0050FF !important; }
 
-h2, .h2, h3 {
-  color: #555555;
-}
-
-/* Links */
+/* Content links */
 .content a {
-  color: #555555;
-  background-image: linear-gradient(transparent, transparent 5px, #555555 5px, #555555);
+  color: #555555 !important;
+  background-image: linear-gradient(transparent, transparent 5px, #555555 5px, #555555) !important;
 }
-
-/* Link hover — same blue as highlight */
 .content a:hover {
-  background-image: linear-gradient(transparent, transparent 4px, #0050FF 4px, #0050FF);
+  color: #0050FF !important;
+  background-image: linear-gradient(transparent, transparent 4px, #0050FF 4px, #0050FF) !important;
 }
-
-.content a.icon:hover {
-  color: #0050FF;
-}
+.content a.icon:hover { color: #0050FF !important; }
 
 /* Heading link hover */
 .content h1 a:hover, .content .h1 a:hover,
 .content h2 a:hover, .content h3 a:hover,
 .content h4 a:hover, .content h5 a:hover,
 .content h6 a:hover {
-  background-image: linear-gradient(transparent, transparent 6px, #0050FF 6px, #0050FF);
+  color: #0050FF !important;
+  background-image: linear-gradient(transparent, transparent 6px, #0050FF 6px, #0050FF) !important;
 }
 
-/* Header title */
-#header h1, #header .h1 {
-  color: #555555;
-}
-
-/* Nav colour */
-#header #nav {
-  color: #0050FF;
-}
-
-#header #nav ul a {
-  color: #0050FF;
-}
-
+/* Header */
+#header h1, #header .h1 { color: #555555 !important; }
+#header a { color: #555555 !important; }
+#header a:hover { color: #0050FF !important; }
+#header #nav { color: #0050FF !important; }
+#header #nav ul a { color: #0050FF !important; }
 #header #nav ul a:hover {
-  background-image: linear-gradient(transparent, transparent 5px, #0050FF 5px, #0050FF);
+  color: #0050FF !important;
+  background-image: linear-gradient(transparent, transparent 5px, #0050FF 5px, #0050FF) !important;
 }
-
-#header #nav ul li {
-  border-color: #0050FF;
-}
+#header #nav ul li { border-color: #0050FF !important; }
 
 /* Article H2 hash marker */
-article .content h2:before {
-  color: #0050FF;
-}
+article .content h2:before { color: #0050FF !important; }
 
-/* Search */
-.search-input:focus {
-  border-color: #0050FF;
+/* Post header/footer nav */
+#header-post #nav { color: #0050FF !important; }
+#header-post #nav ul a { color: #0050FF !important; }
+#header-post #nav ul a:hover {
+  background-image: linear-gradient(transparent, transparent 5px, #0050FF 5px, #0050FF) !important;
 }
-
-#search-result em.search-keyword {
-  border-bottom-color: #0050FF;
-  color: #0050FF;
-}
-
-/* Tag/category underlines */
-.article-tag .tag-link:before,
-.article-category .category-link {
-  background-image: linear-gradient(transparent, transparent 10px, #0050FF 10px, #0050FF);
-}
-
-/* TOC */
-#header-post #toc nav > ul > li:before,
-#footer-post #toc-footer #TableOfContents > ul > li:before {
-  color: #0050FF;
-}
-
-#header-post #nav {
-  color: #0050FF;
-}
-
-#header-post #nav ul a {
-  color: #0050FF;
-}
-
+#header-post #nav ul li { border-color: #0050FF !important; }
 #header-post #menu-icon:hover,
 #header-post #menu-icon-tablet:hover,
 #header-post #top-icon-tablet:hover,
-#header-post .active {
-  color: #0050FF;
-}
+#header-post .active { color: #0050FF !important; }
+#header-post #toc a:hover { color: #0050FF !important; }
+#header-post #toc nav > ul > li:before { color: #0050FF !important; }
+#header-post #toc nav > ul > li > ul > li:before { color: #0050FF !important; }
 
-/* Footer post nav */
-#footer-post #nav-footer a {
-  color: #0050FF;
-}
-
+#footer-post #nav-footer a { color: #0050FF !important; }
 #footer-post #nav-footer a:hover {
-  background-image: linear-gradient(transparent, transparent 5px, #0050FF 5px, #0050FF);
+  background-image: linear-gradient(transparent, transparent 5px, #0050FF 5px, #0050FF) !important;
+}
+#footer-post #actions-footer a { color: #0050FF !important; }
+#footer-post #toc-footer a:hover { color: #0050FF !important; }
+#footer-post #toc-footer #TableOfContents > ul > li:before { color: #0050FF !important; }
+#footer-post #toc-footer #TableOfContents > ul > li > ul > li:before { color: #0050FF !important; }
+
+/* Search */
+.search-input:focus { border-color: #0050FF !important; }
+#search-result em.search-keyword {
+  border-bottom-color: #0050FF !important;
+  color: #0050FF !important;
 }
 
-#footer-post #actions-footer a {
-  color: #0050FF;
+/* Tags/categories */
+.article-tag .tag-link:before,
+.article-category .category-link {
+  background-image: linear-gradient(transparent, transparent 10px, #0050FF 10px, #0050FF) !important;
 }
 
 /* Tooltips */
-.tooltipped::after {
-  background: #555555;
-}
-
-.tooltipped::before {
-  color: #555555;
-}
-
+.tooltipped::after { background: #555555 !important; }
+.tooltipped::before { color: #555555 !important; }
 .tooltipped-s::before,
-.tooltipped-sw::before {
-  border-bottom-color: #555555;
-}
+.tooltipped-sw::before { border-bottom-color: #555555 !important; }
 
-/* Code copy button hover */
-pre .code-copy-btn:hover {
-  color: #0050FF;
-}
+/* Code copy button */
+pre .code-copy-btn:hover { color: #0050FF !important; }
