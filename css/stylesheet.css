@@ -1,47 +1,59 @@
 /* =============================================
    Colour & font overrides for tjarnikova.github.io
    Highlight: #0050FF (blue)
-   Base text: #555555 (lighter dark gray)
+   Base text: #444444 (medium dark gray)
    Hover:     #0050FF (same blue)
    Font:      Gill Sans (never bold)
    ============================================= */
 
-/* Font stack — targeted, not global */
+/* Font stack */
 body {
   font-family: "Gill Sans", "Gill Sans MT", "Gill Sans Nova", Calibri, "Trebuchet MS", sans-serif !important;
-  color: #555555;
+  color: #444444;
 }
 
-/* Never bold on headings and body text */
 h1, .h1, h2, .h2, h3, h4, h5, h6, p, li, a {
   font-family: "Gill Sans", "Gill Sans MT", "Gill Sans Nova", Calibri, "Trebuchet MS", sans-serif !important;
   font-weight: 400 !important;
 }
 
-html { border-top-color: #555555 !important; }
+html { border-top-color: #444444 !important; }
 
 /* Headings */
 h1, .h1 { color: #0050FF !important; }
-h2, .h2, h3 { color: #555555 !important; }
+h2, .h2, h3 { color: #444444 !important; }
 
-/* Content links — underline gradient colour only, no !important on background-image */
-.content a { color: #555555; }
-.content a:hover { color: #0050FF; background-image: linear-gradient(transparent, transparent 4px, #0050FF 4px, #0050FF); }
-.content a.icon:hover { color: #0050FF; }
+/* Content links — thin 1px underline via background-size */
+.content a {
+  color: #444444;
+  background-image: linear-gradient(transparent, transparent 5px, #444444 5px, #444444);
+  background-size: 100% 1px;
+}
+.content a:hover {
+  color: #0050FF;
+  background-image: linear-gradient(transparent, transparent 5px, #0050FF 5px, #0050FF);
+  background-size: 100% 1px;
+}
+.content a.icon { background: none; }
+.content a.icon:hover { color: #0050FF; background: none; }
 
 .content h1 a:hover, .content .h1 a:hover,
 .content h2 a:hover, .content h3 a:hover,
 .content h4 a:hover, .content h5 a:hover,
 .content h6 a:hover {
-  background-image: linear-gradient(transparent, transparent 6px, #0050FF 6px, #0050FF);
+  background-image: linear-gradient(transparent, transparent 5px, #0050FF 5px, #0050FF);
+  background-size: 100% 1px;
 }
 
 /* Header */
-#header h1, #header .h1 { color: #555555 !important; }
+#header h1, #header .h1 { color: #444444 !important; }
 #header a:hover { color: #0050FF !important; }
 #header #nav { color: #0050FF !important; }
 #header #nav ul a { color: #0050FF !important; }
-#header #nav ul a:hover { background-image: linear-gradient(transparent, transparent 5px, #0050FF 5px, #0050FF); }
+#header #nav ul a:hover {
+  background-image: linear-gradient(transparent, transparent 5px, #0050FF 5px, #0050FF);
+  background-size: 100% 1px;
+}
 #header #nav ul li { border-color: #0050FF !important; }
 
 /* Article H2 hash marker */
@@ -72,11 +84,12 @@ article .content h2:before { color: #0050FF !important; }
 .article-tag .tag-link:before,
 .article-category .category-link {
   background-image: linear-gradient(transparent, transparent 10px, #0050FF 10px, #0050FF);
+  background-size: 100% 1px;
 }
 
 /* Tooltips */
-.tooltipped::after { background: #555555 !important; }
-.tooltipped-s::before, .tooltipped-sw::before { border-bottom-color: #555555 !important; }
+.tooltipped::after { background: #444444 !important; }
+.tooltipped-s::before, .tooltipped-sw::before { border-bottom-color: #444444 !important; }
 
 /* Code copy button */
 pre .code-copy-btn:hover { color: #0050FF !important; }
