@@ -1,16 +1,17 @@
 /* =============================================
    Colour & font overrides for tjarnikova.github.io
    Highlight: #0050FF (blue)
-   Base text: #444444 (medium dark gray)
+   Base text: #333333 (medium dark gray)
    Hover:     #0050FF (same blue)
    Font:      Gill Sans (never bold)
    ============================================= */
 
 /* Font stack — Jost from Google Fonts, Gill Sans as fallback for desktop */
-@import url('https://fonts.googleapis.com/css2?family=Jost:wght@400/* Font stack */display=swap');
+/* Font stack — Jost from Google Fonts (css2 API auto-serves latin-ext for Czech diacritics) */
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@400&display=swap');
 body {
   font-family: "Jost", "Gill Sans", "Gill Sans MT", sans-serif !important;
-  color: #444444;
+  color: #333333;
 }
 
 h1, .h1, h2, .h2, h3, h4, h5, h6, p, li, a {
@@ -18,16 +19,16 @@ h1, .h1, h2, .h2, h3, h4, h5, h6, p, li, a {
   font-weight: 400 !important;
 }
 
-html { border-top-color: #444444 !important; }
+html { border-top-color: #333333 !important; }
 
 /* Headings */
 h1, .h1 { color: #0050FF !important; }
-h2, .h2, h3 { color: #444444 !important; }
+h2, .h2, h3 { color: #333333 !important; }
 
 /* Content links — thin 1px underline via background-size */
 .content a {
-  color: #444444;
-  background-image: linear-gradient(transparent, transparent 5px, #444444 5px, #444444);
+  color: #333333;
+  background-image: linear-gradient(transparent, transparent 5px, #333333 5px, #333333);
   background-size: 100% 1px;
 }
 .content a:hover {
@@ -47,7 +48,7 @@ h2, .h2, h3 { color: #444444 !important; }
 }
 
 /* Header */
-#header h1, #header .h1 { color: #444444 !important; }
+#header h1, #header .h1 { color: #333333 !important; }
 #header a:hover { color: #0050FF !important; }
 #header #nav { color: #0050FF !important; }
 #header #nav ul a { color: #0050FF !important; }
@@ -89,8 +90,8 @@ article .content h2:before { color: #0050FF !important; }
 }
 
 /* Tooltips */
-.tooltipped::after { background: #444444 !important; }
-.tooltipped-s::before, .tooltipped-sw::before { border-bottom-color: #444444 !important; }
+.tooltipped::after { background: #333333 !important; }
+.tooltipped-s::before, .tooltipped-sw::before { border-bottom-color: #333333 !important; }
 
 /* Code copy button */
 pre .code-copy-btn:hover { color: #0050FF !important; }
